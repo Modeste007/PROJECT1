@@ -378,25 +378,25 @@ p {
 
 /* start of project section*/
 
-#project .project {
+#projects .project {
   flex-direction: column;
   max-width: 1200px;
   margin: 0 auto;
   padding: 80px 0;
 }
 
-#project .project-header h1 {
+#projects .project-header h1 {
   margin-bottom: 50px;
 }
 
-#project .all-project {
+#projects .all-project {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-#project .project-item {
+#projects .project-item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -407,7 +407,7 @@ p {
   border-radius: 10px;
 }
 
-#project .project-info {
+#projects .project-info {
   display: flex;
   padding: 30px;
   flex-basis: 50%;
@@ -419,28 +419,28 @@ p {
   background-image: linear-gradient(60deg, gray 10%, #0f1318 100%);
 }
 
-#project .project-info h1 {
+#projects .project-info h1 {
   font-size: 4rem;
   font-weight: 500;
 }
-#project .project-info h2 {
+#projects .project-info h2 {
   font-size: 1.5rem;
   font-weight: 500;
   margin-top: 10px;
 }
 
-#project .project-info p {
+#projects .project-info p {
   color: white;
 }
 
-#project .project-img {
+#projects .project-img {
   flex-basis: 50%;
   height: 300px;
   overflow: hidden;
   position: relative;
 }
 
-#project .project-img:after {
+#projects .project-img:after {
   content: "";
   left: 0;
   top: 0;
@@ -450,11 +450,11 @@ p {
   opacity: 0.9;
 }
 
-#project .project-img img {
+#projects .project-img img {
   transition: 0.3s ease transform;
 }
 
-#project .project-item:hover .project-img img {
+#projects .project-item:hover .project-img img {
   transform: scale(1.1);
 }
 
@@ -628,7 +628,7 @@ p {
 /* Media queries for tablet */
 @media only screen and (min-width: 768px) {
   /* for project */
-  #project .project-item {
+  #projects .project-item {
     flex-direction: row;
     height: 400px;
     margin: 0;
@@ -636,15 +636,15 @@ p {
     border-radius: 4px;
   }
 
-  #project .project-item:nth-child(even) {
+  #projects .project-item:nth-child(even) {
     flex-direction: row-reverse;
   }
 
-  #project .all-project .project-info {
+  #projects .all-project .project-info {
     height: 100%;
   }
 
-  #project .all-project .project-img {
+  #projects .all-project .project-img {
     height: 100%;
   }
 
@@ -710,6 +710,7 @@ p {
 
 /* For desktop */
 @media only screen and (min-width: 1200px) {
+
   /* header */
   #header .hamburger {
     display: none;
@@ -730,9 +731,11 @@ p {
   #header .nav-list ul li a {
     font-size: 1.8rem;
   }
+  
+  #Services .Services-botton .Services-item {
+    flex-basis: 22%;
+    margin: 1.5%;
+  }
 }
 
-#Services .Services-botton .Services-item {
-  flex-basis: 22%;
-  margin: 1.5%;
-}
+
